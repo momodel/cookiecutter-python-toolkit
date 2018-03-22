@@ -15,21 +15,7 @@ class {{cookiecutter.module_name}}(object):
         '''
         self.checkpoint_dir = os.path.dirname(__file__)+"/checkpoint"
 
-    def train(self, feed={}):
-        '''
-
-        :param feed:
-        :return:
-        '''
-
-    def predict(self, feed={}):
-       '''
-
-       :param feed:
-       :return:
-       '''
-
-    def load_model(self, file=self.checkpoint_dir+"/{{cookiecutter.module_name}}.pkl"):
+    def run(self, feed={}):
         '''
 
         :param feed:

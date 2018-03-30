@@ -11,13 +11,13 @@ class {{cookiecutter.module_name}}(object):
     def __init__(self, input={}):
         '''
 
-        :param feed:
+        :param input:
         '''
         self.checkpoint_dir = os.path.dirname(__file__)+"/checkpoint"
 
     def run(self, input={}):
         '''
 
-        :param feed:
+        :param input:
         :return:
         '''

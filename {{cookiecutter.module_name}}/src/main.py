@@ -8,14 +8,14 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 class {{cookiecutter.module_name}}(object):
 
-    def __init__(self, feed={}):
+    def __init__(self, input={}):
         '''
 
         :param feed:
         '''
         self.checkpoint_dir = os.path.dirname(__file__)+"/checkpoint"
 
-    def run(self, feed={}):
+    def run(self, input={}):
         '''
 
         :param feed:

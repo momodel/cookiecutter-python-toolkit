@@ -15,27 +15,27 @@ param_spec: &default
 
 
 # basic block
-author_name: author_expamle
-module_name: flight_delay_prediction
-module_description: A MO module
+author_name: {{cookiecutter.module_author}}
+module_name: {{cookiecutter.module_name}}
+module_description: {{cookiecutter.module_description}}
 
 input: # mapping to input parameter in main.py
   run:
-    param_1:
-      <<: *default
-      name: "DayofMonth"
-      value_type: "int"
-      default_value: 21
-    param_2:
-      <<: *default
-      name: "DayOfWeek"
-      value_type: "int"
-      default_value: 1
+#    param_1:
+#      <<: *default
+#      name: "DayofMonth"
+#      value_type: "int"
+#      default_value: 21
+#    param_2:
+#      <<: *default
+#      name: "DayOfWeek"
+#      value_type: "int"
+#      default_value: 1
 output:
     run:
-        flight_no:
-          name: 'flight_no'
-          type: "int"
-        flight_date:
-          name: 'flight_date'
-          type: "str"
+#        flight_no:
+#          name: 'flight_no'
+#          type: "int"
+#        flight_date:
+#          name: 'flight_date'
+#          type: "str"

@@ -24,7 +24,8 @@ class {{cookiecutter.module_name}}(object):
         pass
 
 
-if __name__ == '__main__':
-    func_name = sys.argv[0]
-    instance = {{cookiecutter.module_name}}()
-    getattr(instance, func_name)()
+## Note: Uncomment this block before creating a crowdsourcing task
+# if __name__ == '__main__':
+#     func_name = sys.argv[0]
+#     instance = {{cookiecutter.module_name}}()
+#     getattr(instance, func_name)()

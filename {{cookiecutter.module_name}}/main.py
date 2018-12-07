@@ -12,7 +12,7 @@ class {{cookiecutter.module_name}}(object):
 
         :param input:
         '''
-        self.checkpoint_dir = os.path.dirname(__file__) + "/checkpoint"
+        self.checkpoint_dir = os.path.dirname(__file__) + "/results"
         pass
 
     def run(self, input={}):

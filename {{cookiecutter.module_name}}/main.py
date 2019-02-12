@@ -7,21 +7,22 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 class {{cookiecutter.module_name}}(object):
 
-    def __init__(self, input={}):
+    def __init__(self, conf={}):
         '''
-
-        :param input:
+        :param conf:
         '''
         self.checkpoint_dir = os.path.dirname(__file__) + "/results"
         pass
 
-    def run(self, input={}):
+    def run(self, conf={}):
         '''
-
-        :param input:
+        :param conf:
         :return:
         '''
-        pass
+        param1 = conf['param1']  # value_type: str # description: some description
+        param2 = conf['param2']  # value_type: str # description: some description
+        # add your code
+        return {'ret1': 'cat', 'ret2': 'dog'}
 
 
 ## Note: Uncomment this block before creating a crowdsourcing task
